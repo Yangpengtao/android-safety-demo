@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ypt.shain.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <permission
+        android:name="android.permission.CUSTOM_PERMISSION"
+        android:label="@string/custom_permission_label"
+        android:permissionGroup="android.permission.personal_data.access_group"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.CUSTOM_PERMISSION" />
+
+    <permission-group
+        android:name="android.permission.personal_data.access_group"
+        android:label="@string/my_permissions_group_label" >
+    </permission-group>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:permission="android.permission.CUSTOM_PERMISSION" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

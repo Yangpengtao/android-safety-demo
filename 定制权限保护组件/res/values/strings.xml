@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">定制权限保护组件</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="custom_permission_label">Custom Permission</string>
+    <string name="my_permissions_group_label">Personal Data Access</string>
+
+</resources>
